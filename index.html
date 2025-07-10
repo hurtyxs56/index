@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="pl">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Odliczanie 5 minut</title>
     <style>
         body {
@@ -21,13 +21,13 @@
     <div id="timer">05:00</div>
 
     <script>
-        let time = 5 * 60; // 5 minutes in seconds
+        let time = 5 * 60; // 5 minut w sekundach
         const timerElement = document.getElementById('timer');
 
         function updateTimer() {
             const minutes = Math.floor(time / 60);
             const seconds = time % 60;
-            timerElement.textContent = 
+            timerElement.textContent =
                 `${minutes.toString().padStart(2, '0')}:${seconds.toString().padStart(2, '0')}`;
 
             if (time > 0) {
@@ -42,3 +42,4 @@
     </script>
 </body>
 </html>
+
